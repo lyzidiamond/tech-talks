@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+  <title>Big</title>
+  <link href='big.css' rel='stylesheet' type='text/css' />
+  <link href='highlight.css' rel='stylesheet' type='text/css' />
+  <style>
+    body {
+      background-size:contain;
+    }
+    strong {
+      font-weight: normal;
+      color: #0889d1;
+    }
+    ol {
+      padding-left: 2em;
+    }
+    .new-shiny { background: #aaaaaa; }
+    .nobreak {
+      white-space: pre;
+    }
+    .center {
+      text-align: center;
+    }
+    .left {
+      display: block;
+      float: left;
+      
+    }
+    .right {
+      display: block;
+      float: right;
+    }
+  </style>
+  <script src='big.js'></script>
+  <script src='highlight.js'></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body class='light'>
+  <div data-bodyclass='center'><span class='nobreak'>Writing technical talks: a deep dive</span><br/><small class='nobreak'><em>@lyzidiamond | Lyzi Diamond | Mapbox</em></small></div>
+  <div data-bodyclass='center'><img height=50% src='https://farm5.static.flickr.com/4178/34659562616_f6b5ea62fe_b.jpg'><br /><img src='./lyzi-rainbow.gif' /></div>
+  <div>Steps: <ol><li>Goals</li><li>Self-assessment</li><li>Outline/structure</li><li>Slides</li><li>Presenting</li><li>Tips and tricks</li></ol></div>
+  <div>Steps: <ol><li><em>Goals</em></li><li>Self-assessment</li><li>Outline/structure</li><li>Slides</li><li>Presenting</li><li>Tips and tricks</li></ol></div>
+  <div><strong>Goals</strong></div>
+  <div>A good talk starts with a <em>goal</em>.</div>
+  <div>"<strong>Why</strong> am I giving this talk? What do I want the audience to <strong>get out of it</strong>?"</div>
+  <div>Example goals:<ul><li style='color:dodgerblue'>Let audience know about this cool new thing I made</li><li style='color:deepskyblue'>Increase understanding of a core concept</li><li style='color:darkturquoise'>Convince audience to do things a certain way</li><li style='color:mediumaquamarine'>What else?</li></ul></div>
+  <div>Knowing the <em>goal</em> of your talk allows you to <strong>build</strong> toward that goal.</div>
+  <div>This is <span style='color:orange'>especially important</span> with technical talks.</div>
+  <div data-bodyclass='center'><img src='https://media2.giphy.com/media/3o7qDHtC77SXPhhVG8/giphy.gif'></div>
+  <div>My goal: <span style='color:slategray'>Provide guidance to make everyone more comfortable and successful in giving talks</span>!</div>
+  <div>Steps: <ol><li>Goals</li><li><em>Self-assessment</em></li><li>Outline/structure</li><li>Slides</li><li>Presenting</li><li>Tips and tricks</li></ol></div>
+  <div><strong>Self-assessment</strong></div>
+  <div><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Competence_Hierarchy_adapted_from_Noel_Burch_by_Igor_Kokcharov.svg/683px-Competence_Hierarchy_adapted_from_Noel_Burch_by_Igor_Kokcharov.svg.png' /><br /><small class='nobreak'>By TyIzaeL - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=60343464</small></div>
+  <div>As an expert <notes>expert either in a tool or field of study or just in your own experience</notes> you have <span style='color:lightskyblue'>unconscious competence</span>.</div>
+  <div>Your goal when communicating: <span style='color:mediumspringgreen'>conscious competence</span>.</div>
+  <div>So: what do you <em>know</em> that you don't know you know? Y'know?</div>
+  <div>For me:<ul><li style='color:khaki'>git</li><li style='color:lightsalmon'>handbells</li><li style='color:lightcoral'>GIS</li><li style='color:palevioletred'>writing talks</li></ul></div>
+  <div>Write down a topic in which you have <span style='color:lightskyblue'>unconscious competence</span>.</div>
+  <div>This whole talk is an exercise in this: <span style='color:slategray'>knowing what I need to explain explicitly vs. what I can assume you know</span>.</div>
+  <div>Steps: <ol><li>Goals</li><li>Self-assessment</li><li><em>Outline/structure</em></li><li>Slides</li><li>Presenting</li><li>Tips and tricks</li></ol></div>
+  <div><strong>Outline/structure</strong></div>
+  <div>Why?<ul><li style='color:darkorchid'>Hit all the points</li><li style='color:darkorchid'>Feed your goal</li><li style='color:darkorchid'>Feel more comfortable</li><li style='color:darkorchid'>Increase retention</li></ul></div>
+  <div>The goal here is <em>retention</em>. What do you want them to <strong>remember</strong>?</div>
+  <div>Ways to structure a talk:<ul><li style='color:lightcoral'>procedural/walk-through</li><li style='color:indianred'>story/chronological</li><li style='color:mediumpurple'>five-paragraph essay</li><li style='color:mediumslateblue'>what else?</li></ul></div>
+  <div><span style='color:lightcoral'>Procedural/walk-through:</span> good for explaining <strong>how something works</strong> or <strong>facilitating understanding</strong>.</div>
+  <div><span style='color:indianred'>Story/chronological:</span> good for making your audience <strong>feel included</strong> and <strong>convincing</strong>.</div>
+  <div><span style='color:mediumpurple'>Five-paragraph essay:</span> good for <strong>showing off</strong> what you did and why it's important.</div>
+  <div>Which one is <span style='color:slategray'>this talk</span>?</div>
+  <div><strong>Consider:</strong> what <em>stories</em> or <em>analogies</em> can I use to make this <em>real</em> for my audience?</div>
+  <div><strong>Consider:</strong> <ul><li style='color:darkseagreen'>repetition</li><li style='color:darkseagreen'>repetition</li><li style='color:darkseagreen'>repetition</li></ul></div>
+  <div><strong>Consider:</strong> what are your <em>limitations</em>? (See: <span style='color:crimson'>time</span>.)</div>
+  <div><img width=100% src='./outline1.jpg' /></div>
+  <div>Steps: <ol><li>Goals</li><li>Self-assessment</li><li>Outline/structure</li><li><em>Slides</em></li><li>Presenting</li><li>Tips and tricks</li></ol></div>
+  <div><strong>Slides</strong></div>
+  <div>Slides should <em>complement</em> your outline.</div>
+  <div>In your outline, you identified a <span style='color:cadetblue'>structure</span>, some <span style='color:deeppink'>stories and analogies</span> to use, and things you want to <span style='color:darkseagreen'>repeat</span>.</div>
+  <div>How can <em>visuals</em> help get your point across?</div>
+  <div><img src='https://media.giphy.com/media/gcXcSRYZ9cGWY/giphy.gif' /></div>
+  <div><img src='https://media.giphy.com/media/3o6ZtaO9BZHcOjmErm/giphy.gif' /></div>
+  <div><img width=100% src='./abc.JPG' /></div>
+  <div>Always ask yourself: <em>How does this serve my goal?</em></div>
+  <div>Also, remember: <span style='color:darkseagreen'>repetition</span>.</div>
+  <div><img src='https://media.giphy.com/media/gcXcSRYZ9cGWY/giphy.gif' /></div>
+  <div>Tools:<ul><li style='color:darkolivegreen'>Keynote</li><li style='color:darkgreen'>Dropbox Paper</li><li style='color:mediumseagreen'>Google Slides</li><li><a href='https://github.com/tmcw/big'>big</a></li><li style='color:limegreen'>Powerpoint?</li></ul></div>
+  <div>It doesn't really matter. Use whatever feels most <strong>comfortable</strong> for you!</div>
+  <div>Consider:<ul><li style='color:peru'>shareability</li><li style='color:chocolate'>technology</li><li style='color:sienna'>style</li></ul></div>
+  <div><span style='color:slategray'>I like rainbows. 🌈</span></div>
+  <div>Steps: <ol><li>Goals</li><li>Self-assessment</li><li>Outline/structure</li><li>Slides</li><li><em>Presesnting</em></li><li>Tips and tricks</li></ol></div>
+  <div><strong>Presenting</strong></div>
+  <div>If you do <em>all the work</em> described, <strong>presenting</strong> should be a breeze.</div>
+  <div>Five things:<ul><li style='color:blueviolet'>introduce yourself and the talk</li><li style='color:mediumslateblue'>slow down</li><li style='color:cornflowerblue'>give yourself what you need</li><li style='color:dodgerblue'>be excited!</li><li style='color:darkseagreen'>repeat yourself</li></ul></div>
+  <div>By <span style='color:blueviolet'>introducing yourself</span> and <span style='color:blueviolet'>the talk</span>, you are <em>setting expectations</em>.</div>
+  <div>Most people are only going to remember <strong>~25%</strong> of what you say. <span style='color:mediumslateblue'>Slow down</span> to increase that percentage.</div>
+  <div>If you are not <em>comfortable</em>, your talk will not be fun to listen to. <span style='color:cornflowerblue'>Give yourself what you need</span> to be successful.</div>
+  <div>A <em>deep dive</em> is usually about something you like and know a lot about. It's okay to <span style='color:dodgerblue'>show your excitement</span> about the topic -- that's what brings people in!</div>
+  <div>Have I mentioned the power of <span style='color:darkseagreen'>repetition</span>?</div>
+  <div>Steps: <ol><li>Goals</li><li>Self-assessment</li><li>Outline/structure</li><li>Slides</li><li>Presesnting</li><li><em>Tips and tricks</em></li></ol></div>
+  <div><strong>Tips and tricks</strong></div>
+  <div style='color:orangered'>1. Identify vocabulary</div>
+  <div><span style='color:lightskyblue'>unconscious competence</span>: understanding a subject so deeply that it becomes second nature</div>
+  <div style='color:orange'>2. Use colors</div>
+  <div>(<span style='color:darkseagreen'>repetition</span>)</div>
+  <div style='color:gold'>3. Be vulnerable</div>
+  <div>To make myself less nervous, I <em>write my talk into my slides</em>.</div>
+  <div style='color:limegreen'>4. Get silly</div>
+  <div><img width=100% src='https://i.imgur.com/LZuF7Ua.jpg' /></div>
+  <div style='color:mediumturquoise'>5. Kill your ego</div>
+  <div><em>Technical</em> and <em>non-technical</em> is a false dichotomy.</div>
+  <div style='color:mediumblue'>6. Be open to questions and critique</div>
+  <div><em>Critique</em> and <em>criticism</em> are not the same.</div>
+  <div style='color:mediumpurple'>7. Have a conclusion and a call-to-action</div>
+  <div>This can include:<ul><li>a recap of the talk</li><li>reiteration of your goal</li><li>links to learn more</li><li>specific activities to do next</li><li>questions to take home</li></ul></div>
+  <div style='color:rebeccapurple'>8. A note on questions after talks</div>
+  <div>I usually <span style='color:rebeccapurple'>don't</span> take questions after talks.</div>
+  <div>Tips and tricks recap:<ol><li style='color:orangered'>Identify vocabulary</li><li style='color:orange'>Use colors</li><li style='color:gold'>Be vulnerable</li><li style='color:limegreen'>Get silly</li><li style='color:mediumturquoise'>Kill your ego</li><li style='color:mediumblue'>Be open to questions and critique</li><li style='color:mediumpurple'>Have a conclusion and a call-to-action</li><li style='color:rebeccapurple'>Decide if you want to take questions</li></ol></div>
+  <div><strong>So what did we learn today?</strong></div>
+  <div>Steps: <ol><li><em>Goals</em></li><li>Self-assessment</li><li>Outline/structure</li><li>Slides</li><li>Presenting</li><li>Tips and tricks</li></ol></div>
+  <div>Steps: <ol><li>Goals</li><li><em>Self-assessment</em></li><li>Outline/structure</li><li>Slides</li><li>Presenting</li><li>Tips and tricks</li></ol></div>
+  <div>Steps: <ol><li>Goals</li><li>Self-assessment</li><li><em>Outline/structure</em></li><li>Slides</li><li>Presenting</li><li>Tips and tricks</li></ol></div>
+  <div>Steps: <ol><li>Goals</li><li>Self-assessment</li><li>Outline/structure</li><li><em>Slides</em></li><li>Presenting</li><li>Tips and tricks</li></ol></div>
+  <div>Steps: <ol><li>Goals</li><li>Self-assessment</li><li>Outline/structure</li><li>Slides</li><li><em>Presenting</em></li><li>Tips and tricks</li></ol></div>
+  <div>Steps: <ol><li>Goals</li><li>Self-assessment</li><li>Outline/structure</li><li>Slides</li><li>Presenting</li><li><em>Tips and tricks</em></li></ol></div>
+  <div>Like <em>anything else</em>, giving talks requires <strong>practice</strong>. It's <em>hard</em>, but that's okay!</div>
+  <div>I believe in you. ✨</div>
+  <div data-bodyclass='center' data-background-image='https://media.giphy.com/media/3ohhwyOB3q29FZE2KA/giphy.gif' style='color:white'>Questions?</div>
+
+
+</body>
+</html>
